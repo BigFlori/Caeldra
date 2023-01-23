@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Caeldra</title>
+  </head>
+  <body>
+    <main>
+      <section id="maxBuyPrice">
+        <form id="maxBuyPriceForm">
+          <div class="input">
+            <label for="selectedItem">Válassz cuccot:</label>
+            <select id="selectedItem" name="items">
+              <option value="vezetes" selected>Vezetés könyv (max)</option>
+              <option value="ero">Erő könyve (max)</option>
+            </select>
+            <label for="sellPrice">Mennyibe akarod adni:</label>
+            <input
+              type="text"
+              name="sellPrice"
+              id="sellPrice"
+              placeholder="pl: 1.2kkk"
+            />
+            <label for="wantedProfit">Mennyi profitot akarsz: </label>
+            <input
+              type="text"
+              name="wantedProfit"
+              id="wantedProfit"
+              placeholder="pl: 1.4kkk"
+            />
+            <button
+              type="submit"
+              id="applyCalc"
+              onclick="calculate('maxBuyPrice');"
+            >
+              Számolj
+            </button>
+          </div>
+        </form>
+        <div class="line"></div>
+        <!--Különböző könyv típusok kimenete-->
+        <div class="output hidden" id="vezetes">
+          <p>Sunzi: <span id="sunzi"></span> m/db</p>
+          <p>Wuzi: <span id="wuzi"></span> m/db</p>
+          <p>Weilao: <span id="weilao"></span> m/db</p>
+          <p>Woda: <span id="woda"></span> m/db</p>
+        </div>
+        <div class="output hidden" id="ero">
+          <p>Könnyű: <span id="erokonnyu"></span> m/db</p>
+          <p>Közepes: <span id="erokozepes"></span> m/db</p>
+          <p>Nehéz: <span id="eronehez"></span> m/db</p>
+        </div>
+      </section>
+
+      <!--<section id="totalPrice">asd</section>-->
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!--
+    <div id="vezetes">
+            <input type="text" name="sunzi" id="sunzi" />
+            <input type="text" name="wuzi" id="wuzi" />
+            <input type="text" name="weiliao" id="weiliao" />
+            <input type="text" name="woda" id="woda" />
+          </div>
+        -->

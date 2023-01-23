@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 3rem 1rem;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(38, 42, 48);
+  color: white;
+}
+main {
+  display: flex;
+  gap: 1rem;
+}
+section {
+  background-color: rgb(27, 30, 34);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+button {
+    margin-top: 1rem;
+    padding: 0.2rem 0.75rem;
+}
+span {
+  font-weight: bold;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.input label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.input select,
+.input input {
+  padding: 0.2rem 0.75rem;
+}
+.line {
+  background-color: rgb(5, 152, 140);
+  margin: 1rem 0;
+  padding: 0.1rem;
+}
+.hidden {
+  display: none;
+}
